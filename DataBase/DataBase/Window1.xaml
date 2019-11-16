@@ -1,0 +1,29 @@
+﻿<Window x:Class="DataBase.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF700E0E" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFCB4A4A" Offset="0.349"/>
+                <GradientStop Color="#FFFFA2A2" Offset="0.655"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListView x:Name="lvUsuarios" HorizontalAlignment="Left" Height="296" Margin="35,35,0,0" VerticalAlignment="Top" Width="719">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="73,365,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="BtnAgregar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="187,365,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="BtnEliminar_Click"/>
+
+    </Grid>
+</Window>
